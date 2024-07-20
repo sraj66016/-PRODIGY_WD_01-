@@ -1,0 +1,135 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+}
+
+.sections {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, red, blue);
+}
+
+.sections h1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 20;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+nav {
+  width: 60%;
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  background: rgba(51, 51, 51, 0.3);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+  background: rgba(51, 51, 51, 0.5);
+  color: #ffd700;
+}
+
+.active {
+  background: rgb(14, 167, 255);
+  color: #000;
+  box-shadow: 0 0 10px 4px rgba(14, 167, 255, 0.7);
+}
+
+header.scrolled {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#home {
+  background: linear-gradient(45deg, red, rgb(75, 5, 150));
+}
+
+#about {
+  background: linear-gradient(45deg, red, rgb(12, 209, 143));
+}
+
+#contact {
+  background: linear-gradient(45deg, red, rgb(222, 219, 14));
+}
+
+#login {
+  background: linear-gradient(45deg, red, rgb(186, 15, 120));
+}
+/* styles.css */
+
+/* Example of a border image for the navigation links */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  background: rgba(51, 51, 51, 0.3);
+  border: 5px solid transparent; /* Set a border width */
+  border-image: url('cloudy.jpg') 30 round; /* Border image with width and repeat method */
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+  background: rgba(51, 51, 51, 0.5);
+  color: #ffd700;
+}
+
+/* Example of a border image for the active menu item */
+.active {
+  background: rgb(14, 167, 255);
+  color: #000;
+  box-shadow: 0 0 10px 4px rgba(14, 167, 255, 0.7);
+  border-image: url('path/to/your/border-image-active.png') 30 round; /* Different image or styling for active state */
+}
